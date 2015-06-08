@@ -109,9 +109,10 @@ textarea {
   display: inline-block;
   width: 49%;
   height: 2.5em;
+  padding: 0.5em 0em 0em 0em;
   border-bottom: 1px solid #DDDDDD;
   border-top: 2px solid #FAFAFA;
-  font-size: 20pt;
+  font-size: 10pt;
   font-weight: bold;
   background-color: #FAFAFA;
 }
@@ -121,6 +122,32 @@ textarea {
   border-right: 1px solid #DDDDDD;
   border-bottom: 2px solid white;
   background-color: white;
+}
+
+img {
+  float: left;
+  max-height: 110px;
+  padding-right: 1em;
+}
+
+h1 {
+  color: #434343;
+  font-size: 12pt;
+  margin: 0; padding: 0;
+}
+
+h3 {
+  color: #DDDDDD;
+  font-size: 9pt;
+  margin: 0; padding: 0;
+}
+
+.details {
+  margin: 0; padding: 0;
+  font-size: 7pt;
+  color: #434343;
+  clear:both;
+  display:inline-block;
 }
 
 
