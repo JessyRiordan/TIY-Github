@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/JessyRiordan/TIY-Github",
   "devDependencies": {
+    "node-sass": "^3.1.2",
     "wiredep": "^2.2.2"
   }
 }
