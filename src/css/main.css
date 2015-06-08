@@ -98,6 +98,15 @@ textarea {
 .profile {
 }
 
+img {
+  float: left;
+}
+
+.details {
+  display: inline;
+  padding-left: 1em;
+}
+
 
 
 
