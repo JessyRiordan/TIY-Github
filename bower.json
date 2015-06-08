@@ -12,5 +12,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "name":"my_great_project",
+  "dependencies": {
+    "octicons": "*"
+  }
 }
