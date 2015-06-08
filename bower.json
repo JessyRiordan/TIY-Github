@@ -1,5 +1,5 @@
 {
-  "name": "TIY-Github",
+  "name": "my_great_project",
   "version": "0.0.0",
   "homepage": "https://github.com/JessyRiordan/TIY-Github",
   "authors": [
@@ -13,8 +13,9 @@
     "test",
     "tests"
   ],
-  "name":"my_great_project",
   "dependencies": {
-    "octicons": "*"
+    "octicons": "*",
+    "jquery": "~2.1.4",
+    "normalize.css": "~3.0.3"
   }
 }

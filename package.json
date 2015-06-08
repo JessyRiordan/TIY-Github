@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run bower:install",
+    "bower:install": "bower install --save",
+    "postbower:install": "wiredep --src src/index.html",
     "test": "browser-sync start --server --files='src/js/*.js,src/test/index.html,test/spec/**/*.js' --startPath src/test/index.html",
     "start": "browser-sync start --server --files='src/index.html, src/css/*.css, src/js/*.js' --startPath src/index.html"
   },
@@ -16,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/JessyRiordan/TIY-Github/issues"
   },
-  "homepage": "https://github.com/JessyRiordan/TIY-Github"
+  "homepage": "https://github.com/JessyRiordan/TIY-Github",
+  "devDependencies": {
+    "wiredep": "^2.2.2"
+  }
 }
