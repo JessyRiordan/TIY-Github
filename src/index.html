@@ -23,7 +23,8 @@
         <ul class='tabs'>
             <li id='tab' class='active'>
                 <a>About</a>
-            </li><li id='tab'>
+            </li>
+            <li id='tab'>
                 <a>Repositories</a>
             </li>
         </ul>
@@ -31,7 +32,7 @@
     <div class='profile'>
         <img src=../img/octocat.jpeg>
         <h1>The Octocat</h1>
-          <small>octocat</small>
+        <small>octocat</small>
         <ul class='details'>
             <li>
                 <span class="octicon octicon-organization"></span>
@@ -51,14 +52,44 @@
     </div>
     <div class='button'>
         <button>
-          <span class="octicon octicon-person"></span> Follow</button>
+            <span class="octicon octicon-person"></span> Follow</button>
     </div>
     <div>
-      <strong>1k</strong>Followers</div>
+        <strong>1k</strong>Followers</div>
     <div>
-      <strong>2</strong>Starred</div>
+        <strong>2</strong>Starred</div>
     <div>
-      <strong>6</strong>Following</div>
+        <strong>6</strong>Following</div>
+    <div>
+      <ul>
+        <li>Poplular Repositories</li>
+        <li>
+          <span class="octicon octicon-repo-push"></span>
+          octocat/Spoon-Knife
+          <strong>300<span class="octicon octicon-star"></span></strong>
+          </li>
+        <li>
+          <span class="octicon octicon-repo-push"></span>
+          octocat/Hello-World
+          <strong>300<span class="octicon octicon-star"></span></strong>
+          </li>
+        <li>
+          <span class="octicon octicon-repo-push"></span>
+          octocat/hello-world
+          <strong>300<span class="octicon octicon-star"></span></strong>
+          </li>
+        <li>
+          <span class="octicon octicon-repo-push"></span>
+          octocat/octocat.github.io
+          <strong>300<span class="octicon octicon-star"></span></strong>
+          </li>
+        <li>
+          <span class="octicon octicon-repo-push"></span>
+          octocat/git-consortium
+          <strong>300<span class="octicon octicon-star"></span></strong>
+          </li>
+      </ul>
+    </div>
 
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -66,6 +97,12 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $.getJSON('/api/github/users/octocat.json')
+            .then(function(octocat) {
+                console.log(octocat.avatar_url);
+            });
+    </script>
 </body>
 
 </html>
