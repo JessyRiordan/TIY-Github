@@ -30,7 +30,7 @@
         </ul>
     </div>
     <div class='profile'>
-        <img src={{avatar_url}}>
+        <img src='http://lorempixel.com/200/200/cats/' id=avatar>
         <h1>{{name}}</h1>
         <small>{{login}}</small>
         <ul class='details'>
@@ -98,9 +98,11 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $.getJSON('/api/github/users/octocat.json')
+        $.getJSON('/../api/github/users/octocat/octocat.json')
             .then(function(octocat) {
                 console.log(octocat.avatar_url);
+                $avatar = $('img#avatar');
+                $avatar.attr('src', octocat.avatar_url);
             });
     </script>
 </body>
