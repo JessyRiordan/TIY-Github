@@ -81,26 +81,22 @@ textarea {
   width: 100%;
   text-align: center;
   color: #434343; }
-
-.tabs {
-  padding: 0; }
-
-#tab {
-  display: inline-block;
-  width: 49%;
-  height: 2.5em;
-  padding: 0.5em 0em 0em 0em;
-  border-bottom: 1px solid #DDDDDD;
-  border-top: 2px solid #FAFAFA;
-  font-size: 10pt;
-  font-weight: bold;
-  background-color: #FAFAFA; }
-
-#tab.active {
-  border-top: 2px solid #C7702C;
-  border-right: 1px solid #DDDDDD;
-  border-bottom: 2px solid white;
-  background-color: white; }
+  .container .tabs li {
+    display: inline-block;
+    width: 49%;
+    height: 2.5em;
+    padding: 0.5em 0em 0em 0em;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 2px solid #FAFAFA;
+    font-size: 10pt;
+    font-weight: bold;
+    background-color: #FAFAFA; }
+    .container .tabs li::after {
+      content: ' ';
+      border-top: 2px solid #C7702C;
+      border-right: 1px solid #DDDDDD;
+      border-bottom: 2px solid white;
+      background-color: white; }
 
 img {
   float: left;
