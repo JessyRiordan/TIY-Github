@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  text-align: center;
+  color: #434343
+}
+
+.tabs {
+  padding: 0;
+}
+
+#tab {
+  display: inline-block;
+  width: 49%;
+  height: 2.5em;
+  padding: 0.5em 0em 0em 0em;
+  border-bottom: 1px solid #DDDDDD;
+  border-top: 2px solid #FAFAFA;
+  font-size: 10pt;
+  font-weight: bold;
+  background-color: #FAFAFA;
+}
+
+#tab.active {
+  border-top: 2px solid #C7702C;
+  border-right: 1px solid #DDDDDD;
+  border-bottom: 2px solid white;
+  background-color: white;
+}
+
+img {
+  float: left;
+  max-height: 110px;
+  padding-right: 1em;
+}
+
+h1 {
+  color: #434343;
+  font-size: 12pt;
+  margin: 0; padding: 0;
+}
+
+small {
+  color: darkgrey;
+  margin: 0; padding: 0;
+}
+
+.details {
+  margin: 0; padding: 0;
+  padding-top: 1em;
+  font-size: 8pt;
+  color: #434343;
+  list-style-type: none;
+}
+
+.octicon {
+  color: #434343;
+  font-size: 5pt;
+}
+
+
+
+button {
+  width: 100%;
+  background-color: #97CD68;
+  color: white;
+}
