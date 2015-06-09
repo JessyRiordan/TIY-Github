@@ -21,32 +21,32 @@
 
     <div class='container'>
         <ul class='tabs'>
-            <li id='tab' class='active'>
+            <li class='about active'>
                 <a>About</a>
             </li>
-            <li id='tab'>
+            <li class='repos'>
                 <a>Repositories</a>
             </li>
         </ul>
     </div>
     <div class='profile'>
-        <img src=../img/octocat.jpeg>
-        <h1>The Octocat</h1>
-        <small>octocat</small>
+        <img src={{avatar_url}}>
+        <h1>{{name}}</h1>
+        <small>{{login}}</small>
         <ul class='details'>
             <li>
                 <span class="octicon octicon-organization"></span>
-                Github</li>
+                {{company}}</li>
             <li>
                 <span class="octicon octicon-location"></span>
-                San Francisco</li>
+                {{location}}</li>
             <li>
                 <span class="octicon octicon-mail"></span>
-                <a href=email>octocat@github.com</a>
+                <a href=email>{{email}}</a>
             </li>
             <li>
                 <span class="octicon octicon-link"></span>
-                <a href=link>http://www.github.com/blog</a>
+                <a href=link>{{blog}}</a>
             </li>
         </ul>
     </div>
@@ -55,11 +55,11 @@
             <span class="octicon octicon-person"></span> Follow</button>
     </div>
     <div>
-        <strong>1k</strong>Followers</div>
+        <strong>{{followers}}</strong>Followers</div>
     <div>
         <strong>2</strong>Starred</div>
     <div>
-        <strong>6</strong>Following</div>
+        <strong>{{following}}</strong>Following</div>
     <div>
       <ul>
         <li>Poplular Repositories</li>
