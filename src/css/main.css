@@ -81,7 +81,7 @@ textarea {
   width: 100%;
   text-align: center;
   color: #434343; }
-  .container #tab {
+  .container .tabs li {
     display: inline-block;
     width: 49%;
     height: 2.5em;
@@ -91,7 +91,8 @@ textarea {
     font-size: 10pt;
     font-weight: bold;
     background-color: #FAFAFA; }
-    .container #tab:after {
+    .container .tabs li::after {
+      content: ' ';
       border-top: 2px solid #C7702C;
       border-right: 1px solid #DDDDDD;
       border-bottom: 2px solid white;
