@@ -31,8 +31,8 @@
     </div>
     <div class='profile'>
         <img src='http://lorempixel.com/200/200/cats/' id=avatar>
-        <h1>{{name}}</h1>
-        <small>{{login}}</small>
+        <h1 id='name'>{{name}}</h1>
+        <small id=login>{{login}}</small>
         <ul class='details'>
             <li>
                 <span class="octicon octicon-organization"></span>
@@ -97,14 +97,6 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        $.getJSON('/../api/github/users/octocat/octocat.json')
-            .then(function(octocat) {
-                console.log(octocat.avatar_url);
-                $avatar = $('img#avatar');
-                $avatar.attr('src', octocat.avatar_url);
-            });
-    </script>
 </body>
 
 </html>
