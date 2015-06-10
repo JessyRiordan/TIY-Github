@@ -1,18 +1,13 @@
 .grid {
   $grid-width: 100%;
-  max-width: 80%;
-  background-color: lightgrey;
-  outline: 2px solid red;
+  max-width: 85%;
   @extend .clearfix;
   width: $grid-width;
   margin: auto;
 
   .unit {
-    background-color: grey;
-    outline: 2px solid purple;
-
     float:left;
-    width:($grid-width/8);
+    width:($grid-width/5);
     padding-left: 1em;
     padding-right: 1em;
     box-sizing: border-box;
@@ -20,15 +15,13 @@
 
   .unit-span-2 {
     @extend .unit;
-    width: ($grid-width/8) * 2;
+    width: ($grid-width/5) * 2;
   }
 
-  .unit-span-4 {
+  .unit-span-3 {
     @extend .unit;
-    width: ($grid-width/8) * 4;
+    width: ($grid-width/5) * 3;
   }
 
-  .offset-2 {
-    margin-left: ($grid-width/8) * 2;
-  }
+
 }

@@ -134,25 +134,19 @@ button {
   color: white; }
 
 .grid {
-  max-width: 80%;
-  background-color: lightgrey;
-  outline: 2px solid red;
+  max-width: 85%;
   width: 100%;
   margin: auto; }
-  .grid .unit, .grid .unit-span-2, .grid .unit-span-4 {
-    background-color: grey;
-    outline: 2px solid purple;
+  .grid .unit, .grid .unit-span-2, .grid .unit-span-3 {
     float: left;
-    width: 12.5%;
+    width: 20%;
     padding-left: 1em;
     padding-right: 1em;
     box-sizing: border-box; }
   .grid .unit-span-2 {
-    width: 25%; }
-  .grid .unit-span-4 {
-    width: 50%; }
-  .grid .offset-2 {
-    margin-left: 25%; }
+    width: 40%; }
+  .grid .unit-span-3 {
+    width: 60%; }
 
 /* ==========================================================================
    Helper classes
