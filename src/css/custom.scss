@@ -50,6 +50,10 @@ small {
 .octicon {
   color: #434343;
   font-size: 5pt;
+
+  .octicon-organization::before {
+    content: '\f037';
+  }
 }
 
 

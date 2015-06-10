@@ -18,6 +18,10 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <select>
+      <option>Octocat</option>
+      <option>JessyRiordan</option>
+    </select>
 
     <div class='container'>
         <ul class='tabs'>
@@ -34,20 +38,18 @@
         <h1 id='name'>{{name}}</h1>
         <small id=login>{{login}}</small>
         <ul class='details'>
-            <li>
+            <li id='company'>
                 <span class="octicon octicon-organization"></span>
                 {{company}}</li>
-            <li>
+            <li id='location'>
                 <span class="octicon octicon-location"></span>
                 {{location}}</li>
-            <li>
+            <li id='email'>
                 <span class="octicon octicon-mail"></span>
-                <a href=email>{{email}}</a>
-            </li>
-            <li>
+                <a href=email>{{email}}</a></li>
+            <li id='blog'>
                 <span class="octicon octicon-link"></span>
-                <a href=link>{{blog}}</a>
-            </li>
+                <a href=link>{{blog}}</a></li>
         </ul>
     </div>
     <div class='button'>
