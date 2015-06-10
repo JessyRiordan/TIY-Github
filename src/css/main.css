@@ -144,9 +144,11 @@ button {
     padding-right: 1em;
     box-sizing: border-box; }
   .grid .unit-span-2 {
-    width: 40%; }
+    width: 40%;
+    border: 1px solid red; }
   .grid .unit-span-3 {
-    width: 60%; }
+    width: 60%;
+    border: 1px solid red; }
 
 /* ==========================================================================
    Helper classes
