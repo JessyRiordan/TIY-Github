@@ -4,6 +4,7 @@ $.getJSON('/../api/github/users/octocat/octocat.json')
 
         $avatar = $('img#avatar');
         $avatar.attr('src', octocat.avatar_url);
+        $avatar.attr('href', 'http://www.google.com');
 
         $name = $('h1#name');
         $name.text(octocat.name);
