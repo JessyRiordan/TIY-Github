@@ -24,94 +24,95 @@
     </select>
 
     <section class='grid'>
-      <div class='unit'>1</div>
-      <div class='unit'>2</div>
-      <div class='unit'>3</div>
-      <div class='unit'>4</div>
-      <div class='unit'>5</div>
-      <div class='unit'>6</div>
-      <div class='unit'>7</div>
-      <div class='unit'>8</div>
+      <div class='unit 1'></div>
+      <div class='unit 2'></div>
+      <div class='unit 3'></div>
+      <div class='unit 4'></div>
+      <div class='unit 5'></div>
+
+      <div class='unit-span-2'>
+        <div class='profile'>
+            <img src='http://lorempixel.com/200/200/cats/' id=avatar>
+            <h1 id='name'>{{name}}</h1>
+            <small id=login>{{login}}</small>
+            <ul class='details'>
+                <li class="octicon octicon-organization" id='company'>
+                    {{company}}</li>
+                <li id='location'>
+                    <span class="octicon octicon-location"></span>
+                    {{location}}</li>
+                <li id='email'>
+                    <span class="octicon octicon-mail"></span>
+                    <a href=email>{{email}}</a></li>
+                <li id='blog'>
+                    <span class="octicon octicon-link"></span>
+                    <a href=link>{{blog}}</a></li>
+            </ul>
+        </div>
+        <div>
+            <strong>{{followers}}</strong>Followers</div>
+        <div>
+            <strong>2</strong>Starred</div>
+        <div>
+            <strong>{{following}}</strong>Following</div>
+        </div>
+        </div>
+
+        <div class='unit-span-3'>
+          <div class='button'>
+              <button>
+                  <span class="octicon octicon-person"></span> Follow</button>
+          </div>
+          <div class='container'>
+              <ul class='tabs'>
+                  <li class='contributions'>
+                      <a>Contributions</a>
+                  </li>
+                  <li class='repositories'>
+                      <a>Repositories</a>
+                  </li>
+                  <li class='publicActivity'>
+                      <a>Public Activity</a>
+                  </li>
+              </ul>
+          </div>
+
+            <ul>
+              <li>Poplular Repositories</li>
+              <li>
+                <span class="octicon octicon-repo-push"></span>
+                octocat/Spoon-Knife
+                <strong>300<span class="octicon octicon-star"></span></strong>
+                </li>
+              <li>
+                <span class="octicon octicon-repo-push"></span>
+                octocat/Hello-World
+                <strong>300<span class="octicon octicon-star"></span></strong>
+                </li>
+              <li>
+                <span class="octicon octicon-repo-push"></span>
+                octocat/hello-world
+                <strong>300<span class="octicon octicon-star"></span></strong>
+                </li>
+              <li>
+                <span class="octicon octicon-repo-push"></span>
+                octocat/octocat.github.io
+                <strong>300<span class="octicon octicon-star"></span></strong>
+                </li>
+              <li>
+                <span class="octicon octicon-repo-push"></span>
+                octocat/git-consortium
+                <strong>300<span class="octicon octicon-star"></span></strong>
+                </li>
+            </ul>
+          </div>
+      </div>
+
+
     </section>
 
-    <section class='grid'>
-      <div class='unit-span-2'>2 col</div>
-      <div class='unit-span-4'>4 col</div>
-      <div class='unit-span-2'>2 col</div>
-    </section>
 
-    <section class='grid'>
-      <div class='unit-span-4 offset-2'>unit-span-4 offset-2</div>
-    </section>
 
-    <div class='container'>
-        <ul class='tabs'>
-            <li class='about active'>
-                <a>About</a>
-            </li>
-            <li class='repos'>
-                <a>Repositories</a>
-            </li>
-        </ul>
-    </div>
-    <div class='profile'>
-        <img src='http://lorempixel.com/200/200/cats/' id=avatar>
-        <h1 id='name'>{{name}}</h1>
-        <small id=login>{{login}}</small>
-        <ul class='details'>
-            <li class="octicon octicon-organization" id='company'>
-                {{company}}</li>
-            <li id='location'>
-                <span class="octicon octicon-location"></span>
-                {{location}}</li>
-            <li id='email'>
-                <span class="octicon octicon-mail"></span>
-                <a href=email>{{email}}</a></li>
-            <li id='blog'>
-                <span class="octicon octicon-link"></span>
-                <a href=link>{{blog}}</a></li>
-        </ul>
-    </div>
-    <div class='button'>
-        <button>
-            <span class="octicon octicon-person"></span> Follow</button>
-    </div>
-    <div>
-        <strong>{{followers}}</strong>Followers</div>
-    <div>
-        <strong>2</strong>Starred</div>
-    <div>
-        <strong>{{following}}</strong>Following</div>
-    <div>
-      <ul>
-        <li>Poplular Repositories</li>
-        <li>
-          <span class="octicon octicon-repo-push"></span>
-          octocat/Spoon-Knife
-          <strong>300<span class="octicon octicon-star"></span></strong>
-          </li>
-        <li>
-          <span class="octicon octicon-repo-push"></span>
-          octocat/Hello-World
-          <strong>300<span class="octicon octicon-star"></span></strong>
-          </li>
-        <li>
-          <span class="octicon octicon-repo-push"></span>
-          octocat/hello-world
-          <strong>300<span class="octicon octicon-star"></span></strong>
-          </li>
-        <li>
-          <span class="octicon octicon-repo-push"></span>
-          octocat/octocat.github.io
-          <strong>300<span class="octicon octicon-star"></span></strong>
-          </li>
-        <li>
-          <span class="octicon octicon-repo-push"></span>
-          octocat/git-consortium
-          <strong>300<span class="octicon octicon-star"></span></strong>
-          </li>
-      </ul>
-    </div>
 
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
